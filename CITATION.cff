@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "Esse est Percipi in Silico: A Berkeleyan Multi-Agent Reinforcement Learning Experiment"
+version: "1.0.0"
+doi: "TODO-VERSION-DOI"
+date-released: "2026-01-01"
+authors:
+  - family-names: "jo-vr"
+    given-names: "jo-vr"
+url: "https://github.com/jo-vr/berkeley-marl"
+license: "MIT"

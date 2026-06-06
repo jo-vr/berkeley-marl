@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Berkeley MARL Demo</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Berkeley MARL</h1>
+        <p>A tiny cooperative MARL demo: perception-mediated Berkeley condition vs. materialist control.</p>
+      </header>
+
+      <section class="controls">
+        <label>
+          Condition
+          <select id="condition">
+            <option value="berkeley">Berkeley</option>
+            <option value="materialist">Materialist</option>
+          </select>
+        </label>
+        <button id="reset">Reset</button>
+        <button id="step">Step</button>
+        <button id="play">Play</button>
+        <button id="pause">Pause</button>
+      </section>
+
+      <section class="status">
+        <div><strong>Step:</strong> <span id="stepCount">0</span></div>
+        <div><strong>Reward:</strong> <span id="reward">0</span></div>
+        <div><strong>Done:</strong> <span id="done">false</span></div>
+        <div><strong>Success:</strong> <span id="success">false</span></div>
+        <div><strong>Last actions:</strong> <span id="actions">{}</span></div>
+      </section>
+
+      <section id="grid" class="grid" aria-label="Berkeley Forest grid"></section>
+
+      <section class="legend">
+        <span><b class="tree"></b> Tree</span>
+        <span><b class="agent"></b> Agent</span>
+        <span><b class="visible"></b> Perception zone</span>
+      </section>
+    </main>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
